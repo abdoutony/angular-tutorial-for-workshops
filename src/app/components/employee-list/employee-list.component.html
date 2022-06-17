@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <div class="row">
+    <h1>Employee list</h1>
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-6" *ngFor="let employee of employees">
+      <app-employee-item
+        id="{{ employee.id }}"
+        first_name="{{ employee.first_name }}"
+        last_name="{{ employee.last_name }}"
+        email="{{ employee.email }}"
+        gender="{{ employee.gender }}"
+        company_name="{{ employee.company_name }}"
+      ></app-employee-item>
+    </div>
+  </div>
+</div>

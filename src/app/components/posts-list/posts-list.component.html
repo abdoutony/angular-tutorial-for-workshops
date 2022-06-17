@@ -1,0 +1,19 @@
+<div class="container p-5">
+  <div class="row">
+    <h1 class="display-5 text-center">Posts list</h1>
+  </div>
+  <table class="table table-responsive ">
+    <thead>
+      <th>Id</th>
+      <th>Title</th>
+      <th>Body</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts">
+        <td>{{ post.id }}</td>
+        <td>{{ post.title }}</td>
+        <td>{{ post.body }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
